@@ -1,0 +1,23 @@
+<section class="header" style="background: url(../../../../assets/images/header-fon.jpg)">
+  <a routerLink="/admin">
+    <button type="button" class="btn btn-info" style="position: absolute">Admin</button>
+  </a>
+  <div class="header-content">
+    <div class="logo-content">
+      <img src="../../../../assets/images/logo.png" alt="">
+      <span>KnightWatch</span>
+    </div>
+    <h1>The largest selection of watches</h1>
+    <p>Subscribe to get exclusive access to Premium market insights <br> and updates!</p>
+    <div class="input-block">
+      <input type="text" [(ngModel)]="mail" placeholder="Enter your Email" #email='ngModel'
+        required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}" >
+      <button [disabled]="email.invalid" (click)="addItem(mail)">
+        <img src="../../../../assets/images/send.png" alt="">
+      </button>
+    </div>
+    <div [hidden]="email.valid || email.untouched" class="alert alert-danger" style="width: 350px; background: transparent; border: none;">
+      Некоректний Email
+    </div>
+  </div>
+</section>

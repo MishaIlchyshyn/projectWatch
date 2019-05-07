@@ -1,0 +1,66 @@
+.header {
+    height: 562px;
+}
+
+.header .header-content {
+    margin-left: 490px;
+}
+
+.header .header-content .logo-content {
+    max-width: 148px;
+    text-align: center;
+    margin-bottom: 120px;
+    padding-top: 25px;
+}
+
+.header .header-content .logo-content span {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header .header-content h1 {
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.header .header-content p {
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+
+.header .header-content .input-block {
+    position: relative;
+}
+
+.header .header-content .input-block input {
+    background-color: transparent;
+    outline: none;
+    width: 425px;
+    padding: 5px 65px 5px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 40px;
+}
+
+.header .header-content .input-block button {
+    display: contents;
+}
+
+.header .header-content .input-block button img {
+    position: absolute;
+    left: 379px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.header .header-content .input-block img:hover {
+    width: 28px;
+}
+
+.header .header-content .input-block img:active {
+    outline: 1px solid lightblue;
+}

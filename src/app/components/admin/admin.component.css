@@ -1,0 +1,50 @@
+a {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+h2 {
+	text-align: center;
+	color: #6d6c6c;
+}
+
+.block-form {
+	background-color: #f8f8f8;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 15px;
+	padding: 20px;
+	width: 900px;
+}
+
+.block-form input {
+	outline: none;
+	width: 350px;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin: 10px auto;
+	padding: 15px;
+	background-color: #f0f0f0;
+}
+
+.block-list-watch {
+	background-color: #f0f0f0;
+	max-width: 80%;
+	margin: 10px auto;
+	padding: 10px 20px;
+}
+
+.block-list-watch span {
+	font-size: 28px;
+}
+
+.block-list-watch .butt-del-rem button {
+	margin-right: 15px;
+}
+
+.block-list-watch img {
+	width: 100px;
+	border-radius: 100%;
+	margin-left: 10px;
+}

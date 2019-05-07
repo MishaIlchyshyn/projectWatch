@@ -1,0 +1,131 @@
+/* Style search */
+.main {
+    background-color: #f2f2f2;
+}
+
+.main .my-container {
+    max-width: 880px;
+    display: block;
+    margin: 0 auto;
+}
+
+.main .my-container .search-sort {
+    background-color: transparent;
+    border: 1px solid #d6d6d6;
+    margin-top: 35px;
+    border-radius: 3px;
+    padding-left: 30px;
+
+}
+
+.main .my-container .search-sort .search {
+    display: inline-block;
+    padding: 7px;
+}
+
+.main .my-container .search-sort .search img {
+    padding-right: 10px;
+}
+
+.main .my-container .search-sort .sort {
+    float: right;
+    position: relative;
+}
+
+.main .my-container .search-sort .sort img {
+    position: absolute;
+    top: 18px;
+    left: 70px;
+}
+
+.main .my-container .search-sort .sort .sort-content {
+    border-radius: 5px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.main .my-container .search-sort .sort .sort-content option {
+   background-color: #ffffff;
+}
+
+.main .my-container .search-sort .sort .sort-content option:active {
+    background-color: green;
+ }
+
+.main .my-container .search-sort .search input {
+    background-color: transparent;
+    width: 250PX;
+    outline: none;
+    border: none;
+    color: #555555;
+}
+
+.main .my-container .search-sort .search input::placeholder {
+    font-size: 16px;
+    color: #555555;
+}
+
+/* Style watch */
+.main .my-container .watch {
+    background-color: #fff;
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+.main .my-container .watch img {
+    width: 100%;
+    height: 250px;
+}
+
+.main .my-container .watch h2 {
+    font-size: 17px;
+    color: #555555;
+    padding: 20px 0px 0px 30px;
+}
+
+.main .my-container .watch span {
+    font-size: 17px;
+    color: #fa5512;
+    padding-left: 30px;
+}
+
+/* Style pagination */
+.main .pagination {
+	display: block;
+    margin: 0px auto;
+    padding: 40px 0px 30px 0px;
+}
+
+.my-pagination /deep/ .ngx-pagination {
+	text-align: center;
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #fa5512;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.my-pagination /deep/ .ngx-pagination li {
+	background-color: #fff;
+	margin-right: 10px;
+	border: 1px solid transparent;
+}
+
+.my-pagination /deep/ .ngx-pagination li:hover {
+	border: 1px solid #fa5512;
+}
+
+.my-pagination /deep/ .ngx-pagination li a {
+    color: #555555;
+}
+
+.my-pagination /deep/ .ngx-pagination li a:hover {
+	text-decoration: none;
+	color: #fa5512;
+	background-color: #fff;
+}

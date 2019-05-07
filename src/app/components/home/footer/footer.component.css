@@ -1,0 +1,39 @@
+.footer {
+    background-color: #444444;
+}
+
+.footer .my-container {
+    max-width: 880px;
+    display: block;
+    margin: 0 auto;
+    line-height: 150px;
+}
+
+.footer .my-container .left {
+    text-align: left;
+}
+
+.footer .my-container .left span {
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer .my-container .center {
+    text-align: center;
+}
+
+.footer .my-container .center span {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer .my-container .right {
+    text-align: right;
+}
+
+.footer .my-container .right a {
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 15px;
+}

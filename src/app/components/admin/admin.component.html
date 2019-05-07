@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Admin Panel</h2>
+
+			<a routerLink="">
+				<button type="button" class="btn btn-info">Home</button>
+			</a>
+
+			<div class="block-form">
+				<h3>New Watch</h3>
+				<input type="text" placeholder="Title Watch" [(ngModel)]="title">
+				<input type="number" placeholder="Price Watch" [(ngModel)]="price">
+				<input type="file" (change)="selectImage($event)">
+				<button type="button" class="btn btn-success" (click)="addClock(title, price, id)">Add Watch</button>
+			</div>
+
+			<div class="block-list-watch" *ngFor="let clock of clocks">
+				<span>{{ clock.title }} </span>
+				<span>{{ clock.price }} $</span>				
+				<img src=" {{ clock.imgPath }} " alt="">
+				<div class="butt-del-rem">
+					<button type="button" class="btn btn-warning" (click)="editClock(clock)">Edit</button>
+					<button type="button" class="btn btn-danger" (click)="removeClock(clock.id)">Remove</button>
+				</div>
+			</div>
+		</div>
+	</div> <hr>
+
+	<div class="cont-mail">
+		<h2>Subscribers (підписники)</h2>
+		<ol>
+      <li *ngFor="let item of items">{{item.mail}}</li>
+    </ol>
+	</div>
+</div>

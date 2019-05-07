@@ -1,0 +1,36 @@
+<section class="main">
+  <div class="my-container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-sort">
+          <div class="search">
+            <img src="../../../../assets/images/search.png" alt="">
+            <input type="text" placeholder="Search" [(ngModel)]="searchStr">
+          </div>
+          <div class="sort">
+            <img src="../../../../assets/images/drop-down-icon.png" alt="">  
+            <select class="sort-content" (change)="setOrder($event.target.value)">
+              <option>Sort by</option>
+              <option value="price">Price: Low to High</option>
+              <option value="price">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4" *ngFor="let clock of clocks | paginate: { itemsPerPage: 6, currentPage: p } | search: searchStr | orderBy: order: reverse:'case-insensitive'">
+        <div class="watch">
+          <img src="{{clock.imgPath}}" alt="" (click)="viewWatch(clock)" title="modal">
+          <a href="#"><h2>{{clock.title}}</h2></a>
+          <span>$ {{clock.price}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <pagination-controls class="my-pagination" (pageChange)="p = $event" maxSize="5" directionLinks="false"></pagination-controls>
+    </div>
+  </div>
+</section>
