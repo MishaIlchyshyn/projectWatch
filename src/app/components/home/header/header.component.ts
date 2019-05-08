@@ -10,6 +10,7 @@ import { DataService } from '../../../services/data.service';
 export class HeaderComponent implements OnInit {
   
   items: Subscription[] = [];
+  mail: string;
 
   constructor(private dataService: DataService) { }
 

@@ -16,7 +16,7 @@ import { OrderPipe } from 'ngx-order-pipe';
 export class MainComponent implements OnInit {
 
   imgPath: string;
-
+  p;
   order: string = 'price';
   reverse: boolean = false;
 

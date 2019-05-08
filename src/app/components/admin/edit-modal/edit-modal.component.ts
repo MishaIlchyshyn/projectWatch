@@ -23,4 +23,8 @@ export class EditModalComponent implements OnInit {
     this._clockService.editClock(id, data)
   }
 
+  onSelectFileOnEdit() {
+    
+  }
+
 }

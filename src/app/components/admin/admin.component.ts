@@ -15,6 +15,9 @@ import { EditModalComponent } from './edit-modal/edit-modal.component';
 export class AdminComponent implements OnInit {
 
   modalRef: BsModalRef;
+  title: string;
+  price: number;
+  id: number;
 
   imgPath;
 

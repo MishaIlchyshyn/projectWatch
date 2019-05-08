@@ -9,6 +9,6 @@
           <img src="{{ data.watch.imgPath }}" alt="">
           <input type="text" [(ngModel)]="data.watch.title" placeholder="Title Watch">
           <input type="number" [(ngModel)]="data.watch.price" placeholder="Price Watch">
-          <input type="file" (change)="onSelectFileOnEdit($event)">
+          <input type="file" (change)="onSelectFileOnEdit()">
       </div>
   </div>
